@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-navbar {
+  margin-left: 16px;
+}
+.mainHeading {
+  margin-left: 12px;
+  width: 301px;
+  height: 39px;
+  margin-top: 44px;
+  /* font-family: "Montserrat"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 96.5%;
+  /* identical to box height, or 39px */
+
+  /* #FFFFFF */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 60px 12px 80px;
+  gap: 32px;
+
+  width: 375px;
+  height: 3169px;
+
+  background: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.sub-heading {
+  /* height: 29px; */
+  left: 0px;
+  top: 0px;
+  margin-top: 44px;
+  /* font-family: "Montserrat"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.211807px;
+  text-transform: uppercase;
+
+  /* #FFFFFF */
+}
+.para {
+  /* font-family: "Montserrat"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 147%;
+  /* or 24px */
+
+  /* #FFFFFF */
+
+  color: #ffffff;
+
+  opacity: 0.7;
+}
+.card {
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.burger {
+  cursor: pointer;
+}
+.aboutUs {
+  display: none;
+  /* display: flex; */
+  height: 859px;
+  position: relative;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 110px;
+  letter-spacing: 0em;
+  text-align: left;
+  left: 50px;
+}
+.aboutImg {
+  position: absolute;
+  top: 296px;
+  left: 450px;
+}
+.aboutPara {
+  width: 575px;
+  height: 212px;
+
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: -0.2118065357208252px;
+  text-align: left;
+  display: inline-flex;
+  opacity: 0.7;
+  left: 0px;
+  bottom: 0px;
+}
+
+@media only screen and (min-width: 700px) {
+  .container {
+    height: auto;
+    margin-left: 4rem;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .modelImg {
+    margin-top: 44px;
+  }
+  .mainHeading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .burger {
+    display: none;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .aboutUs {
+    display: flex;
+  }
+}
