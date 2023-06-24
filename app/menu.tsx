@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { useState } from "react";
-
-export default function Menu(props) {
+interface MenuProps {
+  fun: (menuOpen: boolean) => void;
+}
+export default function Menu(props: MenuProps) {
   const [menuOpen, setMenuOpen] = useState(true);
   const toggleMenu = () => {
     props.fun(!menuOpen);
