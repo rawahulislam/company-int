@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Menu from ".//menu.tsx";
+import Menu from "./menu";
 import { relative } from "path";
 
 import { useState } from "react";
